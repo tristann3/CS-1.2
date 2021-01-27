@@ -22,7 +22,6 @@ class Playlist:
         return -1
       current_song = current_song.get_next_song()
       counter += 1
-    print(f"Found the song {current_song.get_title()}")
     return counter 
 
   def remove_song(self, title):
