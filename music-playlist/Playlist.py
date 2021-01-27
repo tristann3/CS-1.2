@@ -36,8 +36,6 @@ class Playlist:
 
     # while the current song's next node is not title, pass
     while(current_song.get_next_song() != None):
-      print(current_song.get_title())
-
       # general case -> has more than 2 nodes after
       if (current_song.get_next_song().get_title() == title):
         current_song.set_next_song(current_song.get_next_song().get_next_song())
