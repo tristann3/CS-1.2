@@ -32,13 +32,15 @@ class Playlist:
     # this use case for when a linked list has only one entry, or it is at the end of the list
     if (current_song.get_title() == title.title()):
       self.__first_song = current_song.get_next_song()
+      print(f'{current_song.get_title()} has been removed!')
       return
 
     # while the current song's next node is not title, pass
     while(current_song.get_next_song() != None):
       # general case -> has more than 2 nodes after
-      if (current_song.get_next_song().get_title() == title):
+      if (current_song.get_next_song().get_title() == title.title()):
         current_song.set_next_song(current_song.get_next_song().get_next_song())
+        print(f'{title.title()} has been removed!')
         return
 
       current_song = current_song.get_next_song()
