@@ -30,7 +30,7 @@ class Playlist:
     current_song = self.__first_song
 
     # this use case for when a linked list has only one entry, or it is at the end of the list
-    if (current_song.get_title() == title):
+    if (current_song.get_title() == title.title()):
       self.__first_song = current_song.get_next_song()
       return
 
