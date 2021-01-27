@@ -7,6 +7,7 @@ class Playlist:
   def add_song(self, title):
     '''Adds song to the Playlist and reassigns the head of the linked list'''
     new_song = Song(title)
+    new_song.set_title(title)
     new_song.set_next_song(self.__first_song)
     self.__first_song = new_song
 
