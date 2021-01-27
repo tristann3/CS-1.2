@@ -22,7 +22,7 @@ class Song:
 
   def set_next_song(self, next_song):
     '''Setter for the next node//song in the linked list'''
-    self.__next_song = next_song
+    self.__next_song = next_song # all songs are title cased upon creation
 
   def __str__(self):
     '''Dunder str method to return the song title'''
