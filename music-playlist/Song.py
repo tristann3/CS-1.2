@@ -13,9 +13,8 @@ class Song:
     '''Setter for song title'''
     title = str(title)
     title = title.title()
-    print(title)
     
-    self.__next_song = title
+    self.__title = title
 
   def get_next_song(self):
     '''Getter for next node/song in the linked list'''
