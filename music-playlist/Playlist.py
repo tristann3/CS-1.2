@@ -18,7 +18,7 @@ class Playlist:
 
     while (current_song.get_title().lower() != title.lower()):
       # if the end of the linked list is reached, return -1, meaning nothing was found
-      if current_song.get_next_song == None:
+      if current_song.get_next_song() == None:
         return -1
       current_song = current_song.get_next_song()
       counter += 1
