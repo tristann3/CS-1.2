@@ -25,5 +25,16 @@ def selection_sort(lst):
 
     print("----------")
 
-# Test list
-selection_sort([13, 4, 9, 5, 3, 16, 12])
+def recursive_selection_sort(A, index, n):
+  min = index
+  for j in range(index + 1, n):
+    if A[j] < A[min]:
+      min = j
+  A[index], A[min] = A[min], A[index]
+
+  if index + 1 < n:
+    recursive_selection_sort(A, index + 1, n)
+
+  return(A)
+
+print(recursive_selection_sort([4, 2, 7, 1, 3], 0, 5))
