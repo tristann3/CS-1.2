@@ -3,23 +3,6 @@ from os import path
 import string
 # from TesterFunction import test_counter
 
-ht = HashTable(3)
-
-# ht.insert("Joi Anderson", 25)
-# ht.insert("word", 1)
-# ht.insert("word", 1)
-# ht.insert("hello", 1)
-# ht.insert("yawn", 1)
-# ht.print_key_values()
-
-
-# for ll in ht.arr:
-#   ll.print_nodes()
-
-
-
-
-
 print('''Welcome to Word Frequency Counter! 📊 
 
 This program will:
